@@ -5340,11 +5340,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mobster 91\\source\\repos\\DinnamuS 2.0 Desktop\\DinnamuS 2.0 Desktop.csproj",
+      "projectUniqueName": "D:\\dinnamus-desktop\\DinnamuS 2.0 Desktop.csproj",
       "projectName": "DinnamuS 2.0 Desktop",
-      "projectPath": "C:\\Users\\Mobster 91\\source\\repos\\DinnamuS 2.0 Desktop\\DinnamuS 2.0 Desktop.csproj",
+      "projectPath": "D:\\dinnamus-desktop\\DinnamuS 2.0 Desktop.csproj",
       "packagesPath": "C:\\Users\\Mobster 91\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mobster 91\\source\\repos\\DinnamuS 2.0 Desktop\\obj\\",
+      "outputPath": "D:\\dinnamus-desktop\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

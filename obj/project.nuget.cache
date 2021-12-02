@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "17RQ7jeFcuFEyj2T4yYj9/JYEi+4JOup8tmzorapPQt/9fjNhlH1UAX3WTYWvqTtqExIoA65Ln0SGJJ3Ui+crA==",
+  "dgSpecHash": "o+DQW/RZoCHTBZzp8QuwEri0DseJRK9ugPHb4ZuGb31nP6dxWv5Jk+cZsnwzIWzD2D1b6IyDMLiwlPvCnSuc+w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Mobster 91\\source\\repos\\DinnamuS 2.0 Desktop\\DinnamuS 2.0 Desktop.csproj",
+  "projectFilePath": "D:\\dinnamus-desktop\\DinnamuS 2.0 Desktop.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mobster 91\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Mobster 91\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

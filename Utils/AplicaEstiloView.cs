@@ -7,6 +7,7 @@ using System.Windows.Media;
 
 namespace DinnamuS_2._0_Desktop.Utils
 {
+    //alteracao
     public class AplicaEstiloView
     {
         List<Control> controles;

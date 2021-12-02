@@ -165,7 +165,7 @@ namespace DinnamuS_2._0_Desktop.View.Estoque {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/DinnamuS 2.0 Desktop;component/view/estoque/crudgradesview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/DinnamuS 2.0 Desktop;V1.0.0.0;component/view/estoque/crudgradesview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\View\Estoque\CRUDGradesView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
