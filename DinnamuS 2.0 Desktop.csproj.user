@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="View\Clientes\CRUDClientesView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\CriteriosDeBuscaView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Enderecos\MunicipiosView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Estoque\CRUDGradeItensView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Estoque\CRUDGradesView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Estoque\CRUDProdutosView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\SobreView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\TestesView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\TiposDeContatos.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="View\Clientes\CRUDClientesView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\CriteriosDeBuscaView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Enderecos\PaisesView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Enderecos\MunicipiosView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Estoque\CRUDGradeItensView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Estoque\CRUDGradesView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Estoque\CRUDProdutosView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\SobreView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\TestesView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\TiposDeDocumentos.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\TiposDeContatos.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

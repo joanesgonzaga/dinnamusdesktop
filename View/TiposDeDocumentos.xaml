@@ -1,0 +1,63 @@
+﻿<Window x:Class="DinnamuS_2._0_Desktop.View.TiposDeDocumentos"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DinnamuS_2._0_Desktop.View"
+        mc:Ignorable="d"
+        Title="Tipos De Documentos" Height="355" Width="600" Background="CadetBlue" Initialized="Window_Initialized" Closing="Window_Closing">
+    <Grid x:Name="gridGeral">
+        
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="60" />
+            <RowDefinition Height="33" />
+        </Grid.RowDefinitions>
+
+        <Grid Margin="0" Grid.Row="0" Name="gridDados" DataContext="{Binding ElementName=dataGridEntidades,Path=SelectedItem}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="60" />
+                <ColumnDefinition Width="80" />
+                <ColumnDefinition Width="60" />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="0" Content="Código:" VerticalContentAlignment="Center" />
+            <TextBox IsEnabled="False" x:Name="txtCodigo" Margin="4" Grid.Row="0" Grid.Column="1" Text="{Binding Path=Id, UpdateSourceTrigger=PropertyChanged}" />
+            <Label Grid.Column="2" Content="Tipo:" VerticalContentAlignment="Center" />
+            <TextBox x:Name="txtTipo" Margin="0,4,4,0" Grid.Column="3" Text="{Binding Path=Tipo}" />
+            <Label Grid.Row="1" Content="Máscara" VerticalContentAlignment="Center" />
+            <TextBox x:Name="txtMascara" Margin="4,4,0,4" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Text="{Binding Path=Mascara, UpdateSourceTrigger=PropertyChanged}" />
+        </Grid>
+
+        <DataGrid Grid.Row="1" IsReadOnly="True" x:Name="dataGridEntidades" CanUserResizeRows="False" SelectionMode="Single" AutoGenerateColumns="false"  ColumnHeaderHeight="25" RowHeight="30" AlternatingRowBackground="LightGray" CanUserAddRows="False"   Margin="0,5,0,0" SelectionChanged="dataGridEntidades_SelectionChanged">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Código" Width="100" Binding="{Binding Path=Id}" />
+                <DataGridTextColumn Header="Tipo" Width="250" Binding="{Binding Path=Tipo}" />
+                <DataGridTextColumn Header="Máscara" Width="150" Binding="{Binding Path=Mascara}"  />
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <StackPanel Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0" Orientation="Horizontal" Grid.Row="2">
+            <Button x:Name="btnNovo" Width="100" Margin="5" Content="Novo" Click="btnNovo_Click" />
+            <Button x:Name="btnEditar" Width="100" Margin="5" Content="Editar" Click="btnEditar_Click" />
+            <Button x:Name="btnExcluir" Width="100" Margin="5" Content="Excluir" Click="btnExcluir_Click" />
+            <Button x:Name="btnLimpar" Width="100" Margin="5" Content="Limpar" />
+            <Button x:Name="btnSair" Width="100" Margin="5" Content="Sair" Click="btnSair_Click" />
+            
+        </StackPanel>
+        
+        <StatusBar x:Name="statusBar" Grid.Row="3" Grid.ColumnSpan="2"  >
+            <Label Content="Operação:" HorizontalAlignment="Center" />
+            <Label x:Name="lblStatus" Content="{Binding Path=Status, UpdateSourceTrigger=PropertyChanged}" />
+        </StatusBar>
+
+    </Grid>
+</Window>

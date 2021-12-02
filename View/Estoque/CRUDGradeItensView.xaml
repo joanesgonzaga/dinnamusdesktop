@@ -1,0 +1,70 @@
+﻿<Window x:Class="DinnamuS_2._0_Desktop.View.Estoque.CRUDGradeItensView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DinnamuS_2._0_Desktop.View.Estoque"
+        mc:Ignorable="d"
+        Title="CADASTRO DE ITENS DA GRADE" Height="450" Width="650" MinWidth="600" MinHeight="400" Background="CadetBlue" Initialized="Window_Initialized" Closing="Window_Closing">
+    <Window.Resources>
+        
+    </Window.Resources>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="95" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Name="gridDados">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="90" />
+                <ColumnDefinition Width="90" />
+                <ColumnDefinition Width="90" />
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Label Grid.Column="0" Content="GRADE: " Foreground="White" Margin="5" VerticalAlignment="Center" FontSize="14" Grid.ColumnSpan="2" />
+            <TextBox Grid.Row="0" Grid.Column="1" Name="txtNome" Margin="5" VerticalContentAlignment="Center" Grid.ColumnSpan="5" Text="{Binding Path=Nome, UpdateSourceTrigger=PropertyChanged}"  />
+
+            <Label Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" Foreground="White" FontSize="14" Margin="5" Content="VARIAÇÂO: " />
+            <TextBox x:Name="txtVariacao" Grid.Row="1" Grid.Column="1" Margin="5" VerticalContentAlignment="Center" HorizontalAlignment="Stretch" Text="{Binding Path=Variacao, UpdateSourceTrigger=PropertyChanged}"  />
+            <Label Grid.Row="1" Grid.Column="2" Content="Ordem: " Foreground="White" FontSize="14" VerticalAlignment="Center" />
+            <TextBox x:Name="txtOrdem" Grid.Row="1" VerticalContentAlignment="Center" Grid.Column="3" Margin="5" Text="{Binding Path=Ordem, UpdateSourceTrigger=PropertyChanged}" />
+            <Button x:Name="btnAdicionar" Content="ADICIONAR" Grid.Row="1" Grid.Column="4" Margin="5" Background="Beige" Click="btnAdicionar_Click" />
+            <Button x:Name="btnRemover" Content="REMOVER" Grid.Row="1" Grid.Column="5" Margin="5" Background="Beige" Click="btnRemover_Click" />
+
+
+        </Grid>
+        <DataGrid Grid.Row="1" IsReadOnly="True" x:Name="dataGridEntidades" CanUserResizeRows="False" SelectionMode="Single" AutoGenerateColumns="false"  ColumnHeaderHeight="25" RowHeight="30" AlternatingRowBackground="LightGray" CanUserAddRows="False"   Margin="0,5,0,0" SelectionChanged="dataGridEntidades_SelectionChanged" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Width="100" Binding="{Binding Path=Id}" />
+                <DataGridTextColumn Header="VARIAÇÃO" Width="250" Binding="{Binding Path=Variacao}" />
+                <DataGridTextColumn Header="ORDEM" Width="150" Binding="{Binding Path=Ordem}"  />
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <StackPanel Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0" Orientation="Horizontal" Grid.Row="2">
+            <Button x:Name="btnNovo" Width="100" Margin="5" Background="Beige" Content="Novo" Click="btnNovo_Click" />
+            <Button x:Name="btnEditar" Width="100" Margin="5" Background="Beige" Content="Editar" Click="btnEditar_Click" />
+            <Button x:Name="btnExcluir" Width="100" Margin="5" Background="Beige" Content="Excluir" Click="btnExcluir_Click" />
+            <Button x:Name="btnLimpar" Width="100" Margin="5" Background="Beige" Content="Limpar" Click="btnLimpar_Click" />
+            <Button x:Name="btnSair" Width="100" Margin="5" Background="Beige" Content="Sair" Click="btnSair_Click" />
+
+        </StackPanel>
+
+        <StatusBar x:Name="statusBar" Grid.Row="4" Grid.ColumnSpan="4">
+            <Label Content="Operação: " />
+            <Label Content="{Binding Path=Status, UpdateSourceTrigger=PropertyChanged}" />
+        </StatusBar>
+    </Grid>
+</Window>

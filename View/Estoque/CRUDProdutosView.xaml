@@ -1,0 +1,206 @@
+﻿<Window x:Class="DinnamuS_2._0_Desktop.View.Estoque.CRUDProdutosView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DinnamuS_2._0_Desktop.View.Estoque"
+        mc:Ignorable="d"
+        Title="CADASTRO DE PRODUTOS" Height="550" Width="880" Initialized="Window_Initialized" Closing="Window_Closing">
+    <Window.Resources>
+        <SolidColorBrush x:Key="corDeFundo" Color="CadetBlue" />
+        <SolidColorBrush x:Key="backGroundButton" Color="Beige" />
+    </Window.Resources>
+    
+    <Grid x:Name="gridEstrutural" Background="{StaticResource corDeFundo}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"  />
+            <RowDefinition Height="33" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Column="0" Grid.Row="0" Grid.RowSpan="5" Orientation="Vertical" Margin="20,10,5,0" Height="390" VerticalAlignment="Stretch" >
+            <Button x:Name="btnNovo" Content="Novo" Margin="10"  Height="45" FontSize="14" Background="{StaticResource backGroundButton}" Click="btnNovo_Click" />
+            
+            <Button x:Name="btnEditar" Margin="10" Content="Editar" Height="45" FontSize="14" Background="{StaticResource backGroundButton}" Click="btnEditar_Click"  />
+            <Button x:Name="btnExcluir" Margin="10" Content="Excluir" Height="45" FontSize="14" Background="{StaticResource backGroundButton}" Click="btnExcluir_Click"  />
+            <Button x:Name="btnLimpar" Margin="10" Content="Limpar" Height="45" FontSize="14" Background="{StaticResource backGroundButton}" Click="btnLimpar_Click" />
+            <!-- <Button x:Name="btTestar" Margin="10" Content="Testar" Height="45" FontSize="18" /> -->
+            <!-- <Button x:Name="btnEndereco" Margin="10" Content="Endereço" Height="45" FontSize="18" Click="btnEndereco_Click" /> -->
+        </StackPanel>
+
+        <Grid Grid.Column="1">
+            <TabControl  Background="{StaticResource corDeFundo}" FontSize="15">
+                <TabItem Header="Geral" Margin="0" Width="100">
+                    <Grid x:Name="gridProduto" Grid.Row="0" Grid.Column="1" Background="{StaticResource corDeFundo}" Margin="5,0,0,0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+
+                        <Grid x:Name="gridDadosProduto" Grid.Row="0" >
+                            <!-- Definir de acordo com os campos-->
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="15" />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="110" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+
+                            <StackPanel Name="stk"  Grid.Row="1" Grid.Column="0"  Orientation="Vertical" Margin="0">
+                                <Label Content="Código: " Foreground="White"   HorizontalAlignment="Center" FontSize="15" />
+                                <TextBox Height="32" FontSize="18" VerticalContentAlignment="Center"  x:Name="txtCodigo" Width="Auto" Margin="0,0,3,0" Text="{Binding Path=Id, UpdateSourceTrigger=PropertyChanged}" />
+                            </StackPanel>
+
+                            <StackPanel Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Orientation="Vertical" Margin="0">
+                                <Label Content="Descrição: " Foreground="White" VerticalAlignment="Center" FontSize="15" />
+                                <TextBox x:Name="txtNome" FontSize="18" VerticalContentAlignment="Center" Height="32" Margin="3,0,0,0"  Text="{Binding Path=Nome, UpdateSourceTrigger=PropertyChanged}" />
+                            </StackPanel>
+
+                            <StackPanel Grid.Row="1" Grid.Column="3" Width="Auto">
+                                <Label VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" Margin="5" Content="Ativo?: " />
+                                <CheckBox x:Name="chkBoxAtivo" VerticalAlignment="Center" HorizontalAlignment="Center"  IsChecked="{Binding Path=isAtivo, UpdateSourceTrigger=PropertyChanged}" />
+                            </StackPanel>
+
+                            <StackPanel Grid.Row="2">
+                                <Label Content="Unidade: " Foreground="White" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="15"  />
+                                <ComboBox  Height="32" Width="Auto" FontSize="15" Margin="0,0,3,0" VerticalContentAlignment="Center" >
+                                    <ComboBoxItem  Content="Selecionar" IsSelected="True" />
+                                </ComboBox>
+                            </StackPanel>
+
+                            <Grid Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                </Grid.ColumnDefinitions>
+
+                                <StackPanel Grid.Column="0" MinWidth="125"  HorizontalAlignment="Stretch">
+                                    <Label Content="EAN" Foreground="White" FontSize="15" />
+                                    <TextBox VerticalContentAlignment="Center" FontSize="18" x:Name="txtEan" Height="32" Margin="3,0,0,0"  HorizontalAlignment="Stretch" />
+                                </StackPanel>
+
+                                <StackPanel Grid.Column="1" HorizontalAlignment="Stretch" MinWidth="125" >
+                                    <Label Content="Referência" Foreground="White" FontSize="15" />
+                                    <TextBox x:Name="txtReferencia" FontSize="18" Height="32" Margin="3,0,0,0" VerticalContentAlignment="Center" HorizontalAlignment="Stretch" />
+                                </StackPanel>
+
+                                <StackPanel Grid.Column="2" HorizontalAlignment="Stretch" MinWidth="109">
+                                    <Label Content="NCM" Foreground="White" FontSize="15" />
+                                    <TextBox x:Name="txtNcm" Height="32" FontSize="18" Margin="3,0,0,0" VerticalContentAlignment="Center" HorizontalAlignment="Stretch" />
+                                </StackPanel>
+
+                            </Grid>
+
+
+                            <!--
+                <ComboBox ItemsSource="{Binding}" Name="cbDocs"  Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" Height="33" Margin="5,14,5,5" FontSize="12" FontWeight="Bold" Width="60" Padding="3">
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <Label Content="{Binding Path=Tipo}" />
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                </ComboBox>
+                -->
+
+
+                            <StackPanel  Grid.Row="3" Grid.Column="1"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch" >
+                                <Label Content="Categoria: " Foreground="White" VerticalAlignment="Top"  HorizontalAlignment="Left"  FontSize="15" Margin="0,0,0,0" />
+                                <ComboBox  Height="32" Margin="0,0,3,0" FontSize="15" VerticalContentAlignment="Center">
+                                    <ComboBoxItem Content="Selecionar" IsSelected="True" />
+                                </ComboBox>
+                            </StackPanel>
+
+
+
+
+                            <StackPanel Grid.Row="3" Grid.Column="2" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" >
+                                <Label Content="Subcategoria: " Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Left"  FontSize="15" Margin="0,0,0,0" />
+                                <ComboBox Height="32" VerticalContentAlignment="Center" FontSize="15">
+                                    <ComboBoxItem Content="Selecionar" IsSelected="True" />
+                                </ComboBox>
+                            </StackPanel>
+
+
+
+
+                            <Grid x:Name="gridAtivo" Grid.Row="0" Grid.Column="3" Margin="5" Width="Auto">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                </Grid.ColumnDefinitions>
+
+                                <Grid.RowDefinitions>
+                                    <RowDefinition />
+                                </Grid.RowDefinitions>
+
+
+                            </Grid>
+
+                            <!-- <DatePicker Name="datepkrCadastro" Grid.Row="0" Margin="5,20" Grid.Column="3"  -->
+                            <Grid Grid.Row="5" Grid.ColumnSpan="3">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                </Grid.ColumnDefinitions>
+                                <StackPanel Grid.Column="0">
+                                    <Label Content="Preço Compra" Foreground="White" FontSize="15"/>
+                                    <TextBox x:Name="txtPrecoCompra" Height="32" FontSize="18" Margin="0,0,3,0"/>
+                                </StackPanel>
+                                <StackPanel Grid.Column="1">
+                                    <Label Content="Preço de Custo" Foreground="White" FontSize="15"/>
+                                    <TextBox x:Name="txtPrecoCusto" Height="32" FontSize="18" />
+                                </StackPanel>
+                                <StackPanel Grid.Column="2">
+                                    <Label Content="% MarkUp" Foreground="White" FontSize="15"/>
+                                    <TextBox x:Name="txtMarkup" Height="32" FontSize="18" Margin="3,0,0,0" />
+                                </StackPanel>
+
+                                <StackPanel Grid.Column="3">
+                                    <Label Content="Preço de Venda" Foreground="White" FontSize="15"/>
+                                    <TextBox x:Name="txtPrecoVenda" Height="32" FontSize="18" Margin="3,0,0,0"/>
+                                </StackPanel>
+                            </Grid>
+                        </Grid >
+
+
+                        <!--
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+                <TabControl>
+                    
+                </TabControl>
+            </Grid>
+            -->
+
+                    </Grid>
+                </TabItem>
+                <TabItem Header="Detalhes" Width="100">
+                    
+                </TabItem>
+            </TabControl>
+        </Grid>
+        
+        <StatusBar x:Name="statusBar" Grid.Row="3" Grid.ColumnSpan="2"  >
+            <Label Content="Operação:" HorizontalAlignment="Center" />
+            <Label x:Name="lblStatus" Content="{Binding Path=Status, UpdateSourceTrigger=PropertyChanged}" />
+        </StatusBar>
+    </Grid>
+</Window>

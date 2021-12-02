@@ -1,0 +1,20 @@
+﻿DinnamuS 2.0 Desktop
+
+
+winexe
+C#
+.cs
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\obj\Release\netcoreapp3.1\
+DinnamuS_2._0_Desktop
+none
+false
+TRACE;RELEASE;NETCOREAPP;NETCOREAPP3_1;
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\App.xaml
+122000310496
+71196136566
+65181182508
+208-1921774026
+View\Clientes\CRUDClientesView.xaml;View\CriteriosDeBuscaView.xaml;View\Enderecos\MunicipiosView.xaml;View\Enderecos\PaisesView.xaml;View\Estoque\CRUDGradeItensView.xaml;View\Estoque\CRUDGradesView.xaml;View\Estoque\CRUDProdutosView.xaml;View\MainWindow.xaml;View\SobreView.xaml;View\TestesView.xaml;View\TiposDeContatos.xaml;View\TiposDeDocumentos.xaml;
+
+True
+

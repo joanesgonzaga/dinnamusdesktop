@@ -1,0 +1,68 @@
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\bin\Debug\netcoreapp3.1\DinnamuS 2.0 Desktop.exe
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\bin\Debug\netcoreapp3.1\DinnamuS 2.0 Desktop.deps.json
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\bin\Debug\netcoreapp3.1\DinnamuS 2.0 Desktop.runtimeconfig.json
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\bin\Debug\netcoreapp3.1\DinnamuS 2.0 Desktop.runtimeconfig.dev.json
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\bin\Debug\netcoreapp3.1\DinnamuS 2.0 Desktop.dll
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\bin\Debug\netcoreapp3.1\DinnamuS 2.0 Desktop.pdb
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\obj\Debug\netcoreapp3.1\DinnamuS 2.0 Desktop_MarkupCompile.cache
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\obj\Debug\netcoreapp3.1\DinnamuS 2.0 Desktop_MarkupCompile.lref
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\obj\Debug\netcoreapp3.1\DinnamuS 2.0 Desktop.g.resources
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\obj\Debug\netcoreapp3.1\DinnamuS 2.0 Desktop.csproj.CoreCompileInputs.cache
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\obj\Debug\netcoreapp3.1\DinnamuS 2.0 Desktop.AssemblyInfoInputs.cache
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\obj\Debug\netcoreapp3.1\DinnamuS 2.0 Desktop.AssemblyInfo.cs
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\obj\Debug\netcoreapp3.1\DinnamuS 2.0 Desktop.dll
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\obj\Debug\netcoreapp3.1\DinnamuS 2.0 Desktop.pdb
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\obj\Debug\netcoreapp3.1\DinnamuS 2.0 Desktop.genruntimeconfig.cache
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\obj\Debug\netcoreapp3.1\View\MainWindow.g.cs
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\obj\Debug\netcoreapp3.1\View\MainWindow.baml
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\obj\Debug\netcoreapp3.1\DinnamuS 2.0 Desktop.csproj.CopyComplete
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\obj\Debug\netcoreapp3.1\DinnamuS 2.0 Desktop_Content.g.cs
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\bin\Debug\netcoreapp3.1\Images\logo.jpg
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\bin\Debug\netcoreapp3.1\Images\sair.png
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\obj\Debug\netcoreapp3.1\View\CriteriosDeBuscaView.g.cs
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\obj\Debug\netcoreapp3.1\View\CriteriosDeBuscaView.baml
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\obj\Debug\netcoreapp3.1\View\Clientes\CRUDClientesView.g.cs
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\obj\Debug\netcoreapp3.1\View\Clientes\CRUDClientesView.baml
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\bin\Debug\netcoreapp3.1\Humanizer.dll
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.Design.dll
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\bin\Debug\netcoreapp3.1\Npgsql.dll
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\bin\Debug\netcoreapp3.1\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\bin\Debug\netcoreapp3.1\Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\obj\Debug\netcoreapp3.1\DinnamuS 2.0 Desktop.csproj.AssemblyReference.cache
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\obj\Debug\netcoreapp3.1\View\TiposDeContatos.g.cs
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\obj\Debug\netcoreapp3.1\View\TiposDeContatos.baml
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\obj\Debug\netcoreapp3.1\View\TiposDeDocumentos.g.cs
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\obj\Debug\netcoreapp3.1\View\TiposDeDocumentos.baml
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\obj\Debug\netcoreapp3.1\View\Enderecos\MunicipiosView.g.cs
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\obj\Debug\netcoreapp3.1\View\Enderecos\MunicipiosView.baml
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\obj\Debug\netcoreapp3.1\View\SobreView.g.cs
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\obj\Debug\netcoreapp3.1\View\SobreView.baml
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\obj\Debug\netcoreapp3.1\View\Enderecos\PaisesView.g.cs
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\obj\Debug\netcoreapp3.1\View\Enderecos\PaisesView.baml
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\obj\Debug\netcoreapp3.1\View\Estoque\CRUDProdutosView.g.cs
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\obj\Debug\netcoreapp3.1\View\Estoque\CRUDProdutosView.baml
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\obj\Debug\netcoreapp3.1\View\Estoque\CRUDGradesView.g.cs
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\obj\Debug\netcoreapp3.1\View\Estoque\CRUDGradesView.baml
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\obj\Debug\netcoreapp3.1\View\Estoque\CRUDGradeItensView.g.cs
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\obj\Debug\netcoreapp3.1\View\Estoque\CRUDGradeItensView.baml
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\bin\Debug\netcoreapp3.1\Images\logo_transparente.png
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\obj\Debug\netcoreapp3.1\View\TestesView.g.cs
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\obj\Debug\netcoreapp3.1\View\TestesView.baml
+C:\Users\Mobster 91\source\repos\DinnamuS 2.0 Desktop\bin\Debug\netcoreapp3.1\Images\db_up_icon.png

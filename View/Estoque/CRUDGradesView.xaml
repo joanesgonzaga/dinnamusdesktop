@@ -1,0 +1,122 @@
+﻿<Window x:Class="DinnamuS_2._0_Desktop.View.Estoque.CRUDGradesView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DinnamuS_2._0_Desktop.View.Estoque"
+        mc:Ignorable="d"
+        Title="CADASTRO DE GRADES" Height="550" Width="650" Closing="Window_Closing" >
+
+    <Grid x:Name="gridGeral" Background="CadetBlue">
+
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="90" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="60" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Grid Margin="0" Grid.Row="0" Name="gridDados" DataContext="{Binding ElementName=dataGridEntidades,Path=SelectedItem}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="36" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="0" Foreground="White" Content="NOME DA GRADE:" />
+            <TextBox x:Name="txtNome" VerticalContentAlignment="Center" HorizontalAlignment="Stretch"  Margin="3" Grid.Row="0" Grid.Column="1" Text="{Binding Path=Nome, UpdateSourceTrigger=PropertyChanged}" />
+            
+
+            
+                <Label Grid.Row="1" Grid.Column="0" Foreground="white" Content="DESCRIÇÃO:" Margin="0" />
+            <TextBox  x:Name="txtDescricao" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Visible" MaxLines="3" SelectiveScrollingGrid.SelectiveScrollingOrientation="Horizontal" Grid.Row="1" Grid.Column="1" Margin="3"   Text="{Binding Path=Descricao, UpdateSourceTrigger=PropertyChanged}" />
+
+            <Button Grid.Row="1" Grid.Column="2" x:Name="btnAdicionarItem" Background="Beige" Content="Gerenciar Itens" Margin="4,0" Width="90" Click="btnPesquisar_Click" >
+                    <Button.ToolTip>
+
+                        <StackPanel>
+                            <Label FontWeight="Bold" Background="Blue" Foreground="White">
+                                Critérios de busca
+                            </Label>
+                            <TextBlock Padding="10" TextWrapping="WrapWithOverflow" Width="200">
+                                A pesquisa por municípios é realizada da seguinte forma:
+                                <LineBreak />
+                                    <Label FontWeight="Bold" Background="Blue" Foreground="White">
+                                        1º - Código IBGE do município
+                                    </Label>
+                                    <TextBlock>
+                                        Procura pelo Cód. IBGE e ignora o nome digitado e a UF selecionada na lista
+                                    </TextBlock>
+                                <LineBreak />
+                                    <Label FontWeight="Bold" Background="Blue" Foreground="White">
+                                        2º - Nome do município
+                                    </Label>
+                                    <TextBlock>
+                                        Procura, em todas as UFs, por municípios que tenham o nome parecido com o que foi digitado no campo Nome
+                                    </TextBlock>
+                                <LineBreak />
+                                </TextBlock>
+                            <Line Stroke="Black" StrokeThickness="1" X2="200" />
+
+                            <StackPanel Orientation="Horizontal">
+                                <!-- <Image Margin="2" Source="help.gif" /> -->
+                            </StackPanel>
+
+                            <Label FontWeight="Bold" >Pesquisar</Label>
+
+                        </StackPanel>
+
+                    </Button.ToolTip>
+                </Button>
+            
+
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="170" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <DataGrid Grid.Row="0" IsReadOnly="True" x:Name="dataGridEntidades" CanUserResizeRows="False" SelectionMode="Single" AutoGenerateColumns="false"  ColumnHeaderHeight="25" RowHeight="30" AlternatingRowBackground="LightGray" CanUserAddRows="False"   Margin="0,5,0,0" SelectionChanged="dataGridEntidades_SelectionChanged" >
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="ID" Width="100" Binding="{Binding Path=Id}" />
+                    <DataGridTextColumn Header="NOME" Width="250" Binding="{Binding Path=Nome}" />
+                    <DataGridTextColumn Header="DESCRIÇÃO" Width="150" Binding="{Binding Path=Descricao}"  />
+                </DataGrid.Columns>
+            </DataGrid>
+
+            <DataGrid Grid.Row="1" IsReadOnly="True" x:Name="dataGridEntidades2" CanUserResizeRows="False" SelectionMode="Single" AutoGenerateColumns="false"  ColumnHeaderHeight="25" RowHeight="30" AlternatingRowBackground="LightGray" CanUserAddRows="False"   Margin="0,5,0,0" >
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="ID" Width="100"  />
+                    <DataGridTextColumn Header="VARIAÇÃO" Width="250" />
+                    <DataGridTextColumn Header="ORDEM" Width="150"  />
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+        
+
+        <StackPanel Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0" Orientation="Horizontal" Grid.Row="2">
+            <Button x:Name="btnNovo" Width="100" Margin="5" Background="Beige" Content="Novo" Click="btnNovo_Click" />
+            <Button x:Name="btnEditar" Width="100" Margin="5" Background="Beige" Content="Editar" Click="btnEditar_Click" />
+            <Button x:Name="btnExcluir" Width="100" Margin="5" Background="Beige" Content="Excluir" Click="btnExcluir_Click" />
+            <Button x:Name="btnLimpar" Width="100" Margin="5" Background="Beige" Content="Limpar" Click="btnLimpar_Click" />
+            <Button x:Name="btnSair" Width="100" Margin="5" Background="Beige" Content="Sair" Click="btnSair_Click" />
+
+        </StackPanel>
+
+        <StatusBar x:Name="statusBar" Grid.Row="3" >
+            <Label Content="Operação:" HorizontalAlignment="Center" />
+            <Label Height="25" Width="120" x:Name="lblStatus" Content="{Binding Path=Status, UpdateSourceTrigger=PropertyChanged}" />
+        </StatusBar>
+
+    </Grid>
+
+</Window>

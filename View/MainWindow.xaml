@@ -1,0 +1,233 @@
+﻿<Window x:Class="DinnamuS_2._0_Desktop.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DinnamuS_2._0_Desktop"
+        mc:Ignorable="d"
+        Title="Integra 2.0 Desktop" Height="550" Width="1064" WindowStartupLocation="CenterScreen" WindowState="Maximized" Closing="Window_Closing">
+    <Window.Resources>
+        <SolidColorBrush x:Key="backGroundBrush" Color="CadetBlue"  />
+        <SolidColorBrush x:Key="backGroundButtonBrush" Color="Beige"  />
+        
+        
+        
+    </Window.Resources>
+    
+    
+    <Grid >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="35" />
+            
+        </Grid.RowDefinitions>
+        
+
+        <Grid Background="{StaticResource ResourceKey=backGroundBrush}"  Grid.Row="0" Grid.Column="0" Margin="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="105" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0" >
+                <Image Grid.Row="0" Margin="0,0,0,0" x:Name="DefaultLogo" Source="\Images\logo_transparente.png" Width="200" Height="110" Stretch="Fill"  />
+
+
+            </Grid>
+
+            <Grid Grid.Row="1" Background="{StaticResource ResourceKey=backGroundBrush}">
+                <StackPanel Orientation="Vertical" Margin="10">
+                    <Button FontSize="14" x:Name="btnClientes" Content="Clientes" Height="45" Margin="15" Background="{StaticResource backGroundButtonBrush}"  Click="btnClientes_Click" />
+                    <Button FontSize="14" x:Name="btnProdutos" Content="Produtos" Height="45" Margin="15,0,15,15" Background="{StaticResource backGroundButtonBrush}" Click="btnProdutos_Click" />
+                    <Button FontSize="14" x:Name="btnFornecedores" Content="Fornecedores" Height="45" Margin="15,0,15,15" Background="{StaticResource backGroundButtonBrush}" />
+                    <Button FontSize="14" Content="Fornecedores" Height="45" Margin="15,0,15,15" Background="{StaticResource backGroundButtonBrush}" />
+                    <Button FontSize="14" x:Name="btnTestes" Content="btnTestes" Height="45" Margin="15,0,15,15" Background="{StaticResource backGroundButtonBrush}" Click="btnTestes_Click" />
+                </StackPanel>
+            </Grid>
+
+        </Grid>
+
+
+        <Grid Grid.Column="1" Background="{StaticResource ResourceKey=backGroundBrush}">
+            <Grid.RowDefinitions >
+                <RowDefinition Height="35" />
+                <RowDefinition Height="60"  />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+
+            <Menu Grid.Row="0">
+                <MenuItem Header="Configurações" Height="35" Click="MenuItem_Click">
+                    <MenuItem>
+                        <MenuItem.Header>Acesso</MenuItem.Header>
+                    </MenuItem>
+                    <MenuItem Name="mnItemCriteriosBusca" Click="mnItemCriteriosBusca_Click">
+                        <MenuItem.Header>Critérios de Busca</MenuItem.Header>
+                    </MenuItem>
+                    <MenuItem>
+                        <MenuItem.Header>Multitelas</MenuItem.Header>
+                    </MenuItem>
+                    <MenuItem>
+                        <MenuItem.Header>Loja Atual</MenuItem.Header>
+                    </MenuItem>
+                    <MenuItem>
+                        <MenuItem.Header>Licenciamento</MenuItem.Header>
+                    </MenuItem>
+                    <Separator />
+
+                    <MenuItem Header="Cadastro de Tipos">
+                        <MenuItem Name="mnItemTiposDeContatos" Click="mnItemTiposDeContatos_Click">
+                            <MenuItem.Header>Tipo de Contatos</MenuItem.Header>
+                        </MenuItem>
+                        <MenuItem Name="mnItemTiposDeDocumentos" Click="mnItemTiposDeDocumentos_Click">
+                            <MenuItem.Header>Tipo de Documentos</MenuItem.Header>
+                        </MenuItem>
+                    </MenuItem>
+                    
+                    
+                </MenuItem>
+
+                <MenuItem Header="Cadastros" Height="35">
+                    <MenuItem Name="mnItemClientes" Click="mnItemClientes_Click">
+                        <MenuItem.Header>Clientes</MenuItem.Header>
+                    </MenuItem>
+                    <MenuItem>
+                        <MenuItem.Header>Vendedores</MenuItem.Header>
+                    </MenuItem>
+                    <Separator />
+                    <MenuItem Name="mnItemEndereços" Header="Endereços">
+                        <MenuItem Name="mnItemMunicípios" Click="mnItemMunicípios_Click">
+                            <MenuItem.Header>Municípios</MenuItem.Header>
+                        </MenuItem>
+                        <MenuItem Name="mnItemBairros">
+                            <MenuItem.Header>Bairros</MenuItem.Header>
+                        </MenuItem>
+                        <MenuItem Name="mnItemPaises" Click="mnItemPaises_Click">
+                            <MenuItem.Header>Países</MenuItem.Header>
+                        </MenuItem>
+                    </MenuItem>
+                </MenuItem>
+
+
+                <MenuItem Header="Estoque" Height="35" >
+                    <MenuItem x:Name="mnItemProdutos" Click="mnItemProdutos_Click">
+                        <MenuItem.Header>Produtos</MenuItem.Header>
+                    </MenuItem>
+                    <MenuItem>
+                        <MenuItem.Header>Tipos de Movimentações</MenuItem.Header>
+                    </MenuItem>
+                    <MenuItem>
+                        <MenuItem.Header>Grupos</MenuItem.Header>
+                    </MenuItem>
+                    <MenuItem Name="mnItemGrades" Click="mnItemGrades_Click" >
+                        <MenuItem.Header>Grades</MenuItem.Header>
+                    </MenuItem>
+                    <MenuItem>
+                        <MenuItem.Header>Tabela de Preços</MenuItem.Header>
+                    </MenuItem>
+                </MenuItem>
+
+                <MenuItem Header="Vendas" Height="35">
+                    <MenuItem>
+                        <MenuItem.Header>Cotação - DAV</MenuItem.Header>
+                    </MenuItem>
+                    <MenuItem>
+                        <MenuItem.Header>Resumo de Caixa</MenuItem.Header>
+                    </MenuItem>
+                </MenuItem>
+
+                <MenuItem Header="Financeiro" Height="35">
+                    <MenuItem>
+                        <MenuItem.Header>Contas a Pagar</MenuItem.Header>
+                    </MenuItem>
+                    <Separator />
+                    <MenuItem>
+                        <MenuItem.Header>Contas a Receber</MenuItem.Header>
+                    </MenuItem>
+                </MenuItem>
+
+                <MenuItem Header="Ajuda" Height="35">
+                    <MenuItem>
+                        <MenuItem.Header>Registros</MenuItem.Header>
+                    </MenuItem>
+                    
+                    <MenuItem x:Name="mnItemSobre"  Click="mnItemSobre_Click">
+                        <MenuItem.Header>Sobre</MenuItem.Header>
+                    </MenuItem>
+                    <Separator />
+                    <MenuItem x:Name="mnItemSair" Click="mnItemSair_Click">
+                        <MenuItem.Icon>
+                            <Image Source="/Images/sair.png" />
+                        </MenuItem.Icon>
+                        <MenuItem.Header>Sair</MenuItem.Header>
+                    </MenuItem>
+                </MenuItem>
+
+
+
+            </Menu>
+            
+            <StackPanel Grid.Row="1" Orientation="Horizontal" >
+                <TextBox x:Name="txtTermoBusca" MaxLength="20" VerticalContentAlignment="Center" FontSize="14" Margin="0,5,5,5" Height="45" Width="350" HorizontalAlignment="Left"  />
+                <Button x:Name="btnBuscar" Margin="5" Width="100" Content="Pesquisar" Height="45" Background="{StaticResource ResourceKey=backGroundButtonBrush}" FontSize="15" Click="btnBuscar_Click" />
+                <ComboBox x:Name="cbEntidades"  VerticalContentAlignment="Center" Margin="5" Height="45" Width="140" FontSize="14" >
+                    <ComboBoxItem Height="30" Content="Clientes"  />
+                    <ComboBoxItem Height="30" Content="Produtos" />
+                    <ComboBoxItem Height="30" Content="Fornecedores" />
+                </ComboBox>
+
+                <RadioButton x:Name="rbCodigo" VerticalContentAlignment="Center" Margin="5"  GroupName="SearchParam" Content="Código" Foreground="White" />
+                <RadioButton x:Name="rbNome" VerticalContentAlignment="Center" Margin="5"  GroupName="SearchParam" Content="Nome" Foreground="White" />
+                <RadioButton x:Name="rbIdSocial" VerticalContentAlignment="Center" Margin="5"  GroupName="SearchParam" Content="CPF/CNPJ" Foreground="White" >
+                    <RadioButton.ToolTip>
+                        <StackPanel>
+                            <Label FontWeight="Bold" Background="CadetBlue" Foreground="White">
+                                CPF/CNPJ
+                            </Label>
+                            <TextBlock Padding="10" TextWrapping="WrapWithOverflow" Width="200">
+                                Esta opção deve ser selecionada quando o critério de busca for o CPF (em caso de pessoa física)
+                                ou CNPJ (em caso de pessoa jurídica).
+                                <LineBreak />
+                                Devem ser digitados apenas números!
+                            </TextBlock>
+                            <Line Stroke="Black" StrokeThickness="1" X2="200" />
+
+                            <StackPanel Orientation="Horizontal">
+                                <Image Margin="2" Source="help.gif" />
+                            </StackPanel>
+
+                            <Label FontWeight="Bold" >Clique Aqui</Label>
+
+                        </StackPanel>
+                    </RadioButton.ToolTip>
+                </RadioButton>
+
+            </StackPanel>
+
+            <DataGrid Grid.Row="2" IsReadOnly="True" x:Name="dataGridEntidades" CanUserResizeRows="False" SelectionMode="Single" AutoGenerateColumns="false"  ColumnHeaderHeight="40" RowHeight="35" AlternatingRowBackground="LightGray" CanUserAddRows="False"   Margin="0,5,0,10" Grid.RowSpan="2" MouseDoubleClick="dataGridEntidades_MouseDoubleClick" SelectionChanged="dataGridEntidades_SelectionChanged">
+                
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Código" Width="100" Binding="{Binding Path=Id}" />
+                    <DataGridTextColumn Header="Nome/Descrição" Width="250" Binding="{Binding Path=Nome}" />
+                    <DataGridTextColumn Header="CPF/CNPJ" Width="150" Binding="{Binding Path=IdSocial}"  />
+                    
+                </DataGrid.Columns>
+            </DataGrid>
+            
+        </Grid>
+
+        <Grid Grid.Row="2" Grid.ColumnSpan="2">
+            <StatusBar x:Name="statusBar" Grid.Row="0" Grid.ColumnSpan="2"  >
+                <Label Content="Conexão:" HorizontalAlignment="Center" />
+                <Label x:Name="lblStatus"/>
+                <Image x:Name="dbIcon" Source="{Binding Path=Source, UpdateSourceTrigger=PropertyChanged}" />
+            </StatusBar>
+        </Grid>
+
+
+    </Grid>
+</Window>
